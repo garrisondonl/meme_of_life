@@ -1,0 +1,15 @@
+.loginform {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.registerform {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+}

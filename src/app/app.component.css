@@ -1,0 +1,33 @@
+.header {
+  display: block;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: lightslategrey;
+  height: 140px;
+  width: 60%;
+  border: green;
+}
+
+h1 {
+  margin: 5px 5px;
+  color: indigo;
+  text-shadow: 2px 2px 3px #800020;
+  text-align: center;
+  vertical-align: top;
+  width: 98%;
+  background-color: lightgrey;
+  border: 5px solid blue;
+}
+
+p {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 0px;
+  color: green;
+  text-shadow: 2px 2px 3px red;
+  text-align: center;
+  vertical-align: bottom;
+  width: 98%;
+  background-color: lightgrey;
+  border: 5px solid #8A9A9A;
+}

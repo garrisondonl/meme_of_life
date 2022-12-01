@@ -1,1 +1,40 @@
-<p>login works!</p>
+<div class="rootcontainer">
+  <div class="loginform">
+    <form formGroup="lognForm" (ngSubmit)="onLogn()">
+      <div>
+        <label for="uname">user name:</label>
+        <input type="text"
+         id="uname"
+         formControlName="uname">
+      </div>
+      <div>
+        <label for="password">Password: </label>
+        <input type="password"
+        id="password"
+        formControlName="password">
+      </div>
+
+      <br>
+
+      <button type="submit" [disabled]="!lognForm.valid">Submit</button>
+
+      <br>
+
+      <span *ngIf="!lognForm.valid">
+        The user name and password combination does not exist.<br>
+        Please reenter your user name and password or click the register button below
+      </span>
+
+    </form>
+  </div>
+
+  <hr>
+
+  <div class="registerform">
+    <p> if you are a new customer plaease click here to view our requirments.<br>click the Register button below to be taken to our
+      registration form.</p>
+
+      <button routerLink="/register" >Register</button>
+
+  </div>
+</div>
