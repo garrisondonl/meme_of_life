@@ -27,10 +27,23 @@ const analytics = getAnalytics(app);
 export const environment = {
   production: false,
   GIPHY_API_URL: "https://api.giphy.com/v1/gifs/search?api_key=GBDcoDZ4L0s78U7Teq7rL1vpb9spD9MK&q=",
+  // GIPHY_API_KEY: "GBDcoDZ4L0s78U7Teq7rL1vpb9spD9MK",
   // a GIPHY_QUERY string will go inbetween these two so we can add our search term to api call.
-  GIPHY_API_KEY: "GBDcoDZ4L0s78U7Teq7rL1vpb9spD9MK",
+  GIPHY_QUERY_FORMAT: "&limit=25&offset=0&rating=g&lang=en",
+  // general structure: url + '&q=' + query_format
   FIREBASE_API_URL: "",
   FIREBASE_API_KEY: ""
+
+
+  // Usage of api call for giphy
+  /*
+
+  import { query } from '@angular/animations';
+  import { environment } from 'src/environments/environment';
+  let q: string[] | null;
+  const giphyCallUrl = `${environment.GIPHY_API_URL}${q}${environment.GIPHY_QUERY_FORMAT}`;
+
+  */
 };
 
 /*
