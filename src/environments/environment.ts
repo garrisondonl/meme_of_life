@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  GIPHY_API_URL: "https://api.giphy.com/v1/gifs/search?api_key=GBDcoDZ4L0s78U7Teq7rL1vpb9spD9MK&q=",
+  // a GIPHY_QUERY string will go inbetween these two so we can add our search term to api call.
+  GIPHY_API_KEY: "GBDcoDZ4L0s78U7Teq7rL1vpb9spD9MK",
+  FIREBASE_API_URL: "",
+  FIREBASE_API_KEY: ""
 };
 
 /*
