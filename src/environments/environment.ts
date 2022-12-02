@@ -14,8 +14,14 @@ export const environment = {
 
 
   // Usage of api call for giphy
-  // let q: string[] | null;
-  //   const giphyCallUrl = `${environment.GIPHY_API_URL}${q}${environment.GIPHY_QUERY_FORMAT}`;
+  /*
+
+  import { query } from '@angular/animations';
+  import { environment } from 'src/environments/environment';
+  let q: string[] | null;
+  const giphyCallUrl = `${environment.GIPHY_API_URL}${q}${environment.GIPHY_QUERY_FORMAT}`;
+
+  */
 };
 
 /*
