@@ -27,16 +27,16 @@ export class LoginComponent implements OnInit {
     });
    }
 
-  onLogn() {
+  //onLogn() {
 
-    const currentUName = new User(this.correctUName, this.correctPassword, this.correctManager)
+    //const currentUName = new User(this.correctUName, this.correctPassword, this.correctManager)
 
-    if ((this.lognForm.get('uname').value === currentUName.user) && (this.lognForm.get('password').value === currentUName.password)) {
-      if (this.correctManager){
-        this.router.navigateByUrl('/manager');
-      } else {
-        this.router.navigateByUrl('/pantry');
-      }
-    }
-  }
+    //if ((this.lognForm.get('uname').value === currentUName.user) && (this.lognForm.get('password').value === currentUName.password)) {
+      //if (this.correctManager){
+        //this.router.navigateByUrl('/manager');
+      //} else {
+        //this.router.navigateByUrl('/pantry');
+      //}
+    //}
+  //}
 }
