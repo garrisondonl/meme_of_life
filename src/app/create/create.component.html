@@ -9,14 +9,14 @@
               type="submit"
               mat-raised-button color="primary"
               class="btn btn-secondary"
-              (click)="memeSearch()"
+              (click)="memeSearch(str.value)"
               >Search</button>
           </div>
           <input
             class="form-control"
             #str type="text"
             placeholder="..."
-            (change)="memeSearch()"
+            (change)="memeSearch(str.value)"
             >
         </div>
       </div>
