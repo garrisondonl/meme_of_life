@@ -12,11 +12,18 @@
         </p>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-icon-button matTooltip="Primary" color="accent" aria-label="favorite">
+        <button mat-icon-button matTooltip="Primary"
+          color="accent"
+          aria-label="favorite"
+          (click)="onFavorite()">
           <mat-icon>favorite</mat-icon>
         </button>
-        <button mat-raised-button color="warn">Delete</button>
-        <button mat-raised-button color="primary">Hide</button>
+        <button mat-raised-button color="warn"
+          (click)="onDelete()"
+          >Delete</button>
+        <button mat-raised-button color="primary"
+          (click)="onHide()"
+          >Hide</button>
       </mat-card-actions>
     </mat-card>
   </div>
