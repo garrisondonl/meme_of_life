@@ -12,4 +12,19 @@ export class PostComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //making a favorite
+  onFavorite() {
+
+  }
+
+  //deleting a post
+  onDelete() {
+
+  }
+
+  //hide a post
+  onHide() {
+    
+  }
+
 }
