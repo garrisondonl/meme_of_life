@@ -8,6 +8,15 @@
   border: green;
 }
 
+.createpost {
+  display: block;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: lightgrey;
+  width: 40%;
+  border: black;
+}
+
 h1 {
   margin: 5px 5px;
   color: indigo;

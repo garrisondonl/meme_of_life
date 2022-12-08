@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PostService } from '../shared/post.service';
 
 @Component({
   selector: 'app-create',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateComponent implements OnInit {
 
-  constructor() { }
+  constructor(private postService: PostService) { }
 
   ngOnInit(): void {
+  }
+
+  //search for meme
+  memeSearch(value) {
+    this.postService.giphySearchResults(value)
+    console.log('Search meme is:', this.memeSearch)
   }
 
 }

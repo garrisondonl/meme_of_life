@@ -1,1 +1,25 @@
-<p>create works!</p>
+<div class="container">
+  <div class="col-md-6">
+    <div class="p-2 bd-highlight">
+      <div class="form-group mr-2">
+        <p>Search for Meme:</p>
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <button
+              type="submit"
+              mat-raised-button color="primary"
+              class="btn btn-secondary"
+              (click)="memeSearch(str.value)"
+              >Search</button>
+          </div>
+          <input
+            class="form-control"
+            #str type="text"
+            placeholder="..."
+            (change)="memeSearch(str.value)"
+            >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

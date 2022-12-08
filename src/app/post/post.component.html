@@ -1,1 +1,30 @@
-<p>post works!</p>
+<div class="container">
+  <div class="row">
+    <mat-card class="post-card">
+      <mat-card-header>
+        <mat-card-title>UserName goes here</mat-card-title>
+        <mat-card-subtitle>Date of post goes here</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="https://static.wixstatic.com/media/bb1bd6_5798c09022ba43249a38bfea9be1db34~mv2.png/v1/fill/w_640,h_366,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bb1bd6_5798c09022ba43249a38bfea9be1db34~mv2.png" alt="Insert Meme Name later" style="height: 250px">
+      <mat-card-content>
+        <p>
+          Just a sample
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-icon-button matTooltip="Primary"
+          color="accent"
+          aria-label="favorite"
+          (click)="onFavorite()">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-raised-button color="warn"
+          (click)="onDelete()"
+          >Delete</button>
+        <button mat-raised-button color="primary"
+          (click)="onHide()"
+          >Hide</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
