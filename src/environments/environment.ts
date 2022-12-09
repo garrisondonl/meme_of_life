@@ -7,14 +7,6 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
-<<<<<<< Updated upstream
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-
-// Initialize Firebase
-=======
->>>>>>> Stashed changes
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -35,13 +27,11 @@ const analytics = getAnalytics(app);
 
 export const environment = {
   production: false,
-  firebase: firebaseConfig,
   GIPHY_API_URL: "https://api.giphy.com/v1/gifs/search?api_key=GBDcoDZ4L0s78U7Teq7rL1vpb9spD9MK&q=",
   // a GIPHY_QUERY string will go inbetween these two so we can add our search term to api call.
   GIPHY_QUERY_FORMAT: "&limit=25&offset=0&rating=g&lang=en",
   // general structure: url + '&q=' + query_format
   GIPHY_API_KEY: "GBDcoDZ4L0s78U7Teq7rL1vpb9spD9MK",
-<<<<<<< Updated upstream
 
   firebase: {
     apiKey: "AIzaSyDinEBLKs2fcVgLT-T1t18M2Xpssfhs7KY",
@@ -54,10 +44,6 @@ export const environment = {
 }
 
 };
-=======
-  FIREBASE_API_URL: "",
-  FIREBASE_API_KEY: ""
->>>>>>> Stashed changes
 
 
   // Usage of api call for giphy
@@ -69,4 +55,3 @@ export const environment = {
   const giphyCallUrl = `${environment.GIPHY_API_URL}${q}${environment.GIPHY_QUERY_FORMAT}`;
 
   */
-};
