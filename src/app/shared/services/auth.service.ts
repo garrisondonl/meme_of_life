@@ -65,7 +65,7 @@ export class AuthService {
     return this.afAuth.currentUser
       .then((u: any) => u.sendEmailVerification())
       .then(() => {
-        this.router.navigate(['verify-email-address']);
+        this.router.navigate(['verify-email']);
       });
   }
   // Reset Forggot password
@@ -79,10 +79,10 @@ export class AuthService {
         window.alert(error);
       });
   }
-  // Returns true when user is looged in and email is verified
+  // Returns true when user is logged in and email is verified
   get isLoggedIn(): boolean {
     const user = JSON.parse(localStorage.getItem('user')!);
-    return user !== null && user.emailVerified !== false ? true : false;
+    return (user !== null && user.emailVerified !== false) ? true : false;
   }
   // Sign in with Google
   GoogleAuth() {
@@ -123,7 +123,7 @@ export class AuthService {
   SignOut() {
     return this.afAuth.signOut().then(() => {
       localStorage.removeItem('user');
-      this.router.navigate(['sign-in']);
+      this.router.navigate(['login']);
     });
   }
 }
