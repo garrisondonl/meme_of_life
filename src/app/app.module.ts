@@ -9,7 +9,6 @@ import { environment } from 'src/environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RegistrationComponent } from './registration/registration.component';
 import { PostComponent } from './post/post.component';
 import { CreateComponent } from './create/create.component';
 import { LoginComponent } from './login/login.component';
@@ -29,7 +28,6 @@ import {MatIconModule} from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
-    RegistrationComponent,
     PostComponent,
     CreateComponent,
     LoginComponent,
