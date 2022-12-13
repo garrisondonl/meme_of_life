@@ -13,18 +13,18 @@ import { PostComponent } from './post/post.component';
 import { CreateComponent } from './create/create.component';
 import { LoginComponent } from './login/login.component';
 
-import { SignUpComponent } from './login/sign-up/sign-up.component';
-import { ForgotPasswordComponent } from './login/forgot-password/forgot-password.component';
-import { VerifyEmailComponent } from './login/verify-email/verify-email.component';
-
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -34,11 +34,12 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     SignUpComponent,
     ForgotPasswordComponent,
-    VerifyEmailComponent
+    VerifyEmailComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
 
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
