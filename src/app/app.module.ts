@@ -22,7 +22,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { MatIconModule } from '@angular/material/icon';
+import {MatIconModule} from '@angular/material/icon';
+import { FeedComponent } from './feed/feed.component';
 import { HttpClientModule } from '@angular/common/http';
 
 
@@ -35,6 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
     SignUpComponent,
     ForgotPasswordComponent,
     VerifyEmailComponent,
+    FeedComponent
   ],
   imports: [
     BrowserModule,

@@ -6,7 +6,8 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class PostService {
-
+  private firebaseUrl = environment.firebase.authDomain + '/' + environment.firebase.apiKey;
+  // private firebasePostsUrl = environment.firebase.authDomain + '/' + environment.firebase.apiKey;
 
   constructor(private http: HttpClient) { }
 
@@ -14,5 +15,11 @@ export class PostService {
   //need to still research & modify code where needed
   giphySearchResults(queryString) {
     this.http.get(`${environment.GIPHY_API_URL}?term=${queryString}`);
+  }
+
+  getFirebasePostDatabase(){
+    this.http.get(this.firebaseUrl).subscribe((res) =>{
+      console.log(res);
+    });
   }
 }
