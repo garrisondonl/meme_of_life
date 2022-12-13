@@ -3,21 +3,21 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './shared/guard/auth.guard';
 
 import { CreateComponent } from './create/create.component';
-import { FeedComponent } from './feed/feed.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { LoginComponent } from './login/login.component';
-import { SignUpComponent } from './login/sign-up/sign-up.component';
-import { PostComponent } from './post/post.component';
-
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { PostComponent } from './post/post.component';
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'home', component: FeedComponent },
+  { path: '', redirectTo: '/login', pathMatch: 'full'},
   { path: 'create', component: CreateComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignUpComponent },
+  { path: 'forgotPassword', component: ForgotPasswordComponent},
+  { path: 'verifyEmail', component: VerifyEmailComponent},
   { path: 'post', component: PostComponent },
-  { path: 'registration', component: RegistrationComponent }
+
 ];
 
 @NgModule({
