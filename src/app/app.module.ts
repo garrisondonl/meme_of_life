@@ -9,15 +9,13 @@ import { environment } from 'src/environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RegistrationComponent } from './registration/registration.component';
 import { PostComponent } from './post/post.component';
 import { CreateComponent } from './create/create.component';
 import { LoginComponent } from './login/login.component';
 
-import { SignUpComponent } from './login/sign-up/sign-up.component';
-import { ForgotPasswordComponent } from './login/forgot-password/forgot-password.component';
-import { VerifyEmailComponent } from './login/verify-email/verify-email.component';
-
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -28,10 +26,10 @@ import {MatIconModule} from '@angular/material/icon';
 import { FeedComponent } from './feed/feed.component';
 import { HttpClientModule } from '@angular/common/http';
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    RegistrationComponent,
     PostComponent,
     CreateComponent,
     LoginComponent,
@@ -57,7 +55,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatCardModule,
     MatButtonModule,
     MatDialogModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
