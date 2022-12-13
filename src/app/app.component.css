@@ -8,11 +8,11 @@
 }
 
 .createpost {
-  display: block;
-  margin: auto;
+
+  
   box-sizing: border-box;
   background-color: lightgrey;
-  width: 40%;
+
   border: black;
 }
 

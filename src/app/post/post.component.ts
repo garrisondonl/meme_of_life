@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { PostService } from '../shared/post.service';
+
 
 @Component({
   selector: 'app-post',
@@ -6,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent implements OnInit {
+  localPost = this.postService.createdPosts
 
-  constructor() { }
+
+  constructor(private postService: PostService) { }
 
   ngOnInit(): void {
   }
@@ -24,7 +28,7 @@ export class PostComponent implements OnInit {
 
   //hide a post
   onHide() {
-    
+
   }
 
 }
