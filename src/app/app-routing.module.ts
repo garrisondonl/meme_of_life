@@ -11,7 +11,7 @@ import { VerifyEmailComponent } from './login/verify-email/verify-email.componen
 const appRoutes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full'},
   { path: 'create', component: CreateComponent },
-  { path: 'login', component: LoginComponent,
+  { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignUpComponent },
   { path: 'forgotPassword', component: ForgotPasswordComponent},
   { path: 'verifyEmail', component: VerifyEmailComponent},
