@@ -23,8 +23,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
+
 import { FeedComponent } from './feed/feed.component';
 import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -56,7 +58,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     MatDialogModule,
     MatIconModule,
-    HttpClientModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

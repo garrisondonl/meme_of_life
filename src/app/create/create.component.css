@@ -1,0 +1,14 @@
+ul {
+  list-style: none;
+}
+
+li img {
+  max-width: 250px;
+  padding: 5px;
+
+}
+
+.searchResults {
+  display: flex;
+
+}
