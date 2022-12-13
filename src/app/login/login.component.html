@@ -1,33 +1,33 @@
-<div class="displayTable">
-  <div class="displayTableCell">
+<div class="table-dark mx-auto p-4 col-md-4">
+  <div class="display-table-cell">
     <div class="authBlock">
       <h3>Log In</h3>
-      <div class="formGroup">
-        <input type="text" class="formControl" placeholder="Username" #userName required>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Username" #userName required>
       </div>
-      <div class="formGroup">
-        <input type="password" class="formControl" placeholder="Password" #userPassword required>
+      <div class="form-group ">
+        <input type="password" class="form-control" placeholder="Password" #userPassword required>
       </div>
       <!-- Calling SignIn Api from AuthService -->
-      <div class="formGroup">
-        <input type="button" class="btn btnPrimary" value="Log in" (click)="authService.SignIn(userName.value, userPassword.value)">
+      <div class="form-group">
+        <input type="button" class="btn btn-primary" value="Log in" (click)="authService.SignIn(userName.value, userPassword.value)">
       </div>
-      <div class="formGroup">
+      <div class="form-group">
         <span class="or"><span class="orInner">Or</span></span>
       </div>
       <!-- Calling GoogleAuth Api from AuthService -->
-      <div class="formGroup">
-        <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
-          <i class="fab fa-google-plus-g"></i>
+      <div class="form-group">
+        <button type="button" class="btn btn-outline-light" (click)="authService.GoogleAuth()">
+          <img src="https://img.icons8.com/color/16/000000/google-logo.png">
           Log in with Google
         </button>
       </div>
       <div class="forgotPassword">
-        <span routerLink="/forgot-password">Forgot Password?</span>
+        <a routerLink="/forgot-password">Forgot Password?</a>
       </div>
     </div>
     <div class="redirectToLogin">
-      <span>Don't have an account?<span class="redirect" routerLink="/register-user"> Sign Up</span></span>
+      <span>Don't have an account?<a class="redirect" routerLink="/register-user"> Sign Up</a></span>
     </div>
   </div>
 </div>
