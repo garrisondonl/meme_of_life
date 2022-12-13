@@ -11,6 +11,9 @@ export class PostService {
   results = [];
   resultsChanged = new Subject<any []>();
   createdPosts = [];
+  private firebaseUrl = environment.firebase.authDomain + '/' + environment.firebase.apiKey;
+  // private firebasePostsUrl = environment.firebase.authDomain + '/' + environment.firebase.apiKey;
+
 
   constructor(private http: HttpClient) { }
 
@@ -37,5 +40,9 @@ export class PostService {
     console.log(this.createdPosts)
   }
 
-
+  getFirebasePostDatabase(){
+    this.http.get(this.firebaseUrl).subscribe((res) =>{
+      console.log(res);
+    });
+  }
 }
