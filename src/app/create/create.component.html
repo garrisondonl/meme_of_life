@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="col-md-6">
+  <div class="col-md-9">
     <div class="p-2 bd-highlight">
       <div class="form-group mr-2">
         <p>Search for Meme:</p>
@@ -21,5 +21,13 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="searchResults">
+   <ul>
+    <li *ngFor="let result of searchResults">
+      <img src="{{result.images.downsized.url}}" alt="">
+    </li>
+   </ul>
+
   </div>
 </div>
