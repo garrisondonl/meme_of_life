@@ -12,11 +12,9 @@ const appRoutes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full'},
   { path: 'create', component: CreateComponent },
   { path: 'login', component: LoginComponent,
-    children: [
-      { path: 'signup', component: SignUpComponent },
-      { path: 'forgotPassword', component: ForgotPasswordComponent},
-      { path: 'verifyEmail', component: VerifyEmailComponent},
-    ]},
+  { path: 'signup', component: SignUpComponent },
+  { path: 'forgotPassword', component: ForgotPasswordComponent},
+  { path: 'verifyEmail', component: VerifyEmailComponent},
   { path: 'post', component: PostComponent },
 
 ];
