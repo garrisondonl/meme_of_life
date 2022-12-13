@@ -26,8 +26,11 @@ export class CreateComponent implements OnInit {
   //search for meme
   memeSearch(value) {
     this.postService.giphySearchResults(value)
+  }
 
-
+  // button next to result
+  createPost(result){
+    this.postService.createPost(result);
   }
 
 }

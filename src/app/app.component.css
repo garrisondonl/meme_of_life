@@ -9,11 +9,11 @@
 }
 
 .createpost {
-  display: block;
-  margin: auto;
+
+  
   box-sizing: border-box;
   background-color: lightgrey;
-  
+
   border: black;
 }
 

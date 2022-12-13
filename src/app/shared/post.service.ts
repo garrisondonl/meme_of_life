@@ -10,6 +10,7 @@ import { environment } from 'src/environments/environment';
 export class PostService {
   results = [];
   resultsChanged = new Subject<any []>();
+  createdPosts = [];
 
   constructor(private http: HttpClient) { }
 
@@ -29,8 +30,11 @@ export class PostService {
     return this.results.slice();
   }
 
-  emitResults() {
-    this.resultsChanged.next(this.results.slice());
+  // This works with button on create component to save that gif
+  // currently, this saves the gif into a local array called "createdPosts"
+  createPost(result) {
+    this.createdPosts.push(result)
+    console.log(this.createdPosts)
   }
 
 

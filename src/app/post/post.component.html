@@ -1,14 +1,15 @@
-<div class="container">
+<div class="container" *ngFor="let postEl of localPost">
   <div class="row">
+
     <mat-card class="post-card">
       <mat-card-header>
         <mat-card-title>UserName goes here</mat-card-title>
         <mat-card-subtitle>Date of post goes here</mat-card-subtitle>
       </mat-card-header>
-      <img mat-card-image src="" alt="" style="height: 250px">
+      <img mat-card-image src="{{postEl.images.downsized.url}}" alt="" style="height: 250px">
       <mat-card-content>
         <p>
-          Testing
+          {{postEl.title}}
         </p>
       </mat-card-content>
       <mat-card-actions>
