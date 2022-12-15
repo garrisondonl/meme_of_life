@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/meme_of_life",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
