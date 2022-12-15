@@ -13,14 +13,32 @@
         </p>
       </mat-card-content>
       <mat-card-actions>
+        <button mat-raised-button color="primary"
+          (click)="onHide()"
+          >Hide</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+
+<div class="container" *ngFor="let post of postCollectiondata">
+  <div class="row">
+
+    <mat-card class="post-card">
+      <mat-card-header>
+        <mat-card-title>{{post.displayName}}</mat-card-title>
+        <mat-card-subtitle>Date of post goes here</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{post.url}}" alt="" style="height: 250px">
+      <mat-card-actions>
         <button mat-icon-button matTooltip="Primary"
           color="accent"
           aria-label="favorite"
-          (click)="onFavorite()">
+          (click)="update(post.favorite = true)">
           <mat-icon>favorite</mat-icon>
         </button>
         <button mat-raised-button color="warn"
-          (click)="onDelete()"
+          (click)="delete(post.id)"
           >Delete</button>
         <button mat-raised-button color="primary"
           (click)="onHide()"
@@ -29,3 +47,4 @@
     </mat-card>
   </div>
 </div>
+

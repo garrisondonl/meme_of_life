@@ -62,9 +62,9 @@ export class FirebaseService {
     return;
   }
 
-  async updatePost(docId: string, displayName: string, url: string, favorite: boolean) {
+  async updatePost(docId: string, favorite: boolean) {
     const docRef = doc(this.db, 'posts', docId);
-    await updateDoc(docRef, { displayName, url, favorite })
+    await updateDoc(docRef, { favorite })
     return;
   }
 }
