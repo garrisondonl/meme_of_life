@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AuthGuard } from './shared/guard/auth.guard';
 
 import { CreateComponent } from './create/create.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
@@ -17,7 +16,6 @@ const appRoutes: Routes = [
   { path: 'forgotPassword', component: ForgotPasswordComponent},
   { path: 'verifyEmail', component: VerifyEmailComponent},
   { path: 'post', component: PostComponent },
-
 ];
 
 @NgModule({
