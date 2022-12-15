@@ -1,3 +1,7 @@
 .container {
   padding: 20px;
 }
+
+.post-card {
+  max-width: 350px;
+}
