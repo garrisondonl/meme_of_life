@@ -21,7 +21,7 @@ export class PostService {
   giphySearchResults(queryString) {
     this.http.get(`${environment.GIPHY_API_URL}?term=${queryString}`)
     .subscribe((res : any) => {
-      const data = res.data.slice(0,10)
+      const data = res.data.slice(0,12)
       this.resultsChanged.next(data);
     });
     console.log("service results", this.results);
