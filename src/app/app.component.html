@@ -1,3 +1,10 @@
+<mat-toolbar>
+  <span *ngIf="authService.userData as user">{{user.displayName}}</span>
+    <button mat-button color="warn" (click)="authService.SignOut()">
+      <i class="fas fa-sign-out-alt"></i>Log out
+    </button>
+
+</mat-toolbar>
 <div class="container mt-3">
   <div class="row">
     <div class="col-sm-3">

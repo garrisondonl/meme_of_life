@@ -23,10 +23,13 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { FeedComponent } from './feed/feed.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgOptimizedImage } from '@angular/common';
+import { AuthService } from './shared/services/auth.service';
+
 
 
 
@@ -60,10 +63,11 @@ import { NgOptimizedImage } from '@angular/common';
     MatDialogModule,
     MatIconModule,
     HttpClientModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    MatToolbarModule,
 
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
