@@ -31,12 +31,23 @@
       </mat-card-header>
       <img mat-card-image src="{{post.url}}" alt="" style="height: 250px">
       <mat-card-actions>
-        <button mat-icon-button matTooltip="Primary"
-          color="accent"
-          aria-label="favorite"
-          (click)="update(post.favorite = true)">
-          <mat-icon>favorite</mat-icon>
-        </button>
+        <span *ngIf="this.post.favorite; else noColor">
+         <button mat-icon-button matTooltip="Primary"
+           color="accent"
+           aria-label="favorite"
+           (click)="update(post.id, favorite = !favorite)">
+           <mat-icon>favorite</mat-icon>
+         </button>
+        </span>
+        <ng-template #noColor>
+          <button mat-icon-button matTooltip="Primary"
+           color="basic"
+           aria-label="favorite"
+           (click)="update(post.id, favorite = !favorite)">
+           <mat-icon>favorite</mat-icon>
+         </button>
+        </ng-template>
+
         <button mat-raised-button color="warn"
           (click)="delete(post.id)"
           >Delete</button>

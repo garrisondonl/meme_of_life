@@ -1,6 +1,12 @@
-<div class="feed-container">
-  <p>Posts go here!</p>
-  <div class="col-md-6">
-    <app-post *ngFor="let post of posts | async"></app-post>
+<div class="row">
+  <div class="col-md-12">
+    <app-create></app-create>
   </div>
 </div>
+<div class="row">
+  <div class="col-md-12">
+    <app-post></app-post>
+  </div>
+</div>
+
+

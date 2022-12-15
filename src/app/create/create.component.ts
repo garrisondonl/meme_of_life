@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FirebaseService } from '../shared/services/firebase.service';
 import { PostService } from '../shared/post.service';
 import { DocumentData, QuerySnapshot } from 'firebase/firestore';
+import { AuthService } from '../shared/services/auth.service';
 
 @Component({
   selector: 'app-create',
@@ -19,7 +20,7 @@ export class CreateComponent implements OnInit {
 
   postCollectiondata: { displayName: string, url: string, favorite: boolean}[] | any = [];
 
-  constructor(private postService: PostService, private firebaseService: FirebaseService) { }
+  constructor(private postService: PostService, private firebaseService: FirebaseService, public authService: AuthService) { }
 
   ngOnInit(): void {
     this.searchResults = this.postService.getResults();
