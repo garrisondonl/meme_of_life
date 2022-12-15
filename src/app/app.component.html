@@ -1,8 +1,17 @@
 <mat-toolbar>
-  <span *ngIf="authService.userData as user">{{user.displayName}}</span>
-  <button mat-button color="warn" (click)="authService.SignOut()">
+  <span *ngIf="authService.userData as user" >{{user.displayName}}</span>
+  <button
+    class="m-4"
+    *ngIf="authService.userData"
+    mat-stroked-button color="primary"
+    routerLink="feed">Feed</button>
+  <button
+
+    *ngIf="authService.userData"
+    mat-stroked-button color="warn" (click)="authService.SignOut()">
     Log out
   </button>
+
 
 </mat-toolbar>
 <div class="container mt-3">
@@ -11,7 +20,7 @@
       <img class="p-3" mat-card-image src="assets/tmol.png" alt="" style="height: 300px">
     </div>
     <div class="col-md-9">
-      <p>
+      <p *ngIf="!authService.userData">
         "A meme is an idea, behavior, or style that spreads by means of
         imitation from person to person within a culture and often carries
         symbolic meaning representing a particular phenomenon or theme. A meme

@@ -1,6 +1,5 @@
 
 h1 {
-  text-shadow: 2px 2px 3px #800020;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -23,7 +22,6 @@ p {
   margin-bottom: 0px;
   margin-top: 10px;
   color: rgb(200, 206, 200);
-  text-shadow: 2px 2px 3px red;
   vertical-align: bottom;
 }
 
